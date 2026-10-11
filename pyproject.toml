@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subagent-budget"
+version = "0.1.0"
+description = "Hard budget caps for subagents — token/$ limits enforced by hooks, not just displayed"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "hao li", email = "haoli5933@gmail.com" }]
+keywords = ["claude-code", "subagents", "budget", "tokens", "cost-control", "hooks"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development",
+]
+
+[project.urls]
+Homepage = "https://github.com/hahahahahahahahah6/subagent-budget"
+Repository = "https://github.com/hahahahahahahahah6/subagent-budget"
+
+[project.scripts]
+subagent-budget = "subagent_budget.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
